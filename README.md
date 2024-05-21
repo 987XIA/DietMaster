@@ -1,1 +1,1 @@
-# DietMaster
+# MealMapper
