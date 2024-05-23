@@ -92,60 +92,100 @@ body{
 }
 
 
-/* Dashboard--Home */
+/* Dashboard */
 
-.nav{
+/* Header */
+.header {
     background-color: lightblue;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    line-height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
     z-index: 100;
+    box-sizing: border-box;
 }
 
-.logo{
+.header .logo {
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 500;
     text-decoration: none;
     color: black;
 }
 
-.logo a{
+.header .logo a {
     text-decoration: none;
     color: black;
 }
-/* date format missing */
 
-/* later change name of right links or change format
-    not at right now
-
-*/
-
-.right-links a{
-    padding: 0 10px;
+.header .logo i {
+    color: darkblue;
 }
 
-main{
+.header .date {
+    flex: 1;
+    text-align: center;
+}
+
+.header .right-links {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 60px;
 }
 
-.main-box{
+.header .right-links a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.header .btn {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Header */
+/* Side-bar*/
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    padding-top: 20px;
+    margin-top: 40px;
+    position: fixed;
 }
 
-.main-box .top{
+.sidebar-item {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
 }
 
-.bottum{
-    width: 100%;
+.sidebar-item i {
+    margin-right: 10px;
+}
+
+.sidebar-item:hover {
+    background-color: #575757;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-left: 200px; 
+    margin-top: 40px; 
+}
+
+.table-container {
     margin-top: 20px;
 }
 
@@ -159,7 +199,18 @@ main{
     color:rgb(46, 39, 39);
 }
 
+/* footer */
 
+footer{
+    height: 35px;
+    margin: 10px 10px ;
+}
+
+footer p{
+    text-align: center;
+}
+
+/* footer */
 
 
 
