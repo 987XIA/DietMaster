@@ -47,8 +47,8 @@
             ?>
 
 
-                <div class="header">
-                    <header>Sign Up</header>
+                <div class="signup">
+                    <h1>Sign Up</h1>
                     <p>Please fill this form to create an account.</p>
                 </div>
                 <form action="" method="post" id="signupForm">
