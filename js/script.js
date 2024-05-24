@@ -14,11 +14,3 @@ function updateDateTime() {
 setInterval(updateDateTime, 1000);
 updateDateTime();
 
-// sidebar FoodList
-
-document.getElementById('food-list').addEventListener('click', function (e) {
-    e.preventDefault();
-    fetch('food.php')
-        .then(response => response.text())
-        .then(data => document.getElementById('content').innerHTML = data);
-});
