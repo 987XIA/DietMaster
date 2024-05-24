@@ -32,11 +32,11 @@ body{
     margin: 0px 10px;
 }
 
-.form-box header{
-    font-size: 30px;
-    font-weight: 400;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+.form-box .login .signup{
+    font-size: 25px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .form-box p{
@@ -76,7 +76,7 @@ body{
     padding: 0px 10px;
 }
 
-.btn :hover{
+.btn:hover{
     opacity: 0.75;
 }
 
@@ -149,6 +149,7 @@ body{
 }
 
 /* Header */
+
 /* Side-bar*/
 .sidebar {
     width: 200px;
@@ -157,7 +158,7 @@ body{
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-    margin-top: 40px;
+    margin-top: 0px;
     position: fixed;
 }
 
@@ -177,13 +178,7 @@ body{
     background-color: #575757;
 }
 
-.main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #f4f4f4;
-    margin-left: 200px; 
-    margin-top: 40px; 
-}
+/* content */
 
 .table-container {
     margin-top: 20px;
@@ -199,6 +194,63 @@ body{
     color:rgb(46, 39, 39);
 }
 
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-left: 200px; 
+    margin-top: 40px; 
+    display: flex;
+    flex-direction: column;
+    
+}
+/* foodList*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.foodList {
+    max-height: 100vh;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #dddddd;
+}
+
+.foodList thead th {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+th, td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+tr:hover td {
+    color: darkblue;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+td button, td .delete-btn {
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px; 
+    color: black;
+    cursor: pointer; 
+}
+
+
+/* foodList*/
+
+/* content */
 /* footer */
 
 footer{
@@ -208,6 +260,7 @@ footer{
 
 footer p{
     text-align: center;
+    padding: 1em 0;
 }
 
 /* footer */
