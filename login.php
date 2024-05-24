@@ -48,8 +48,8 @@ session_start();
 
             ?>
 
-                <div class="header">
-                    <header>Login</header>
+                <div class="login">
+                    <h1>Login</h1>
                     <p>Please fill in your credentials to login.</p>
                 </div>
                 <form action="" method="post">
