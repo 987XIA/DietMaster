@@ -16,59 +16,60 @@ if (!isset($_SESSION['valid'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 
 
 <body>
-    <div class="nav">
+    <!-- header -->
+    <header class="header">
         <div class="logo">
-            <p><a href="dashboard.php">Logo</a></p>
+            <a href="dashboard.php"><i class="fa-solid fa-plate-wheat"></i>MealMapper</a>
         </div>
         <div class="date">
-            <p>curent date and time on right</p>
+            <p id="currentDateTime">Loading...</p>
         </div>
 
         <div class="right-links">
-            <!--
-            php
-            ---$id = $_SESSION['valid'];
-            $query = mysqli_query($con, " SELECT * FROM users WHERE Id=$id ");
-
-            while ($result = mysqli_fetch_assoc($query)) {
-                $res_Uname = $result['Username'];
-                $res_id = $result['Id'];
-            }
-
-            echo "<a href='edit.php?Id=$res_id'>Change Profile</a>";
-            
-            -->
             <a href="php/logout.php"> <button class="btn">Log Out</button> </a>
-
         </div>
 
+    </header>
+    <!-- header -->
+
+    <!--content-->
+
+    <!--content-->
+
+    <!--sidebar-->
+    <div class="sidebar">
+        <a href="#" id="chart" class="sidebar-item"><i class="fa-solid fa-chart-pie"></i> Chart</a>
+        <a href="#" id="today" class="sidebar-item"><i class="fa-solid fa-calendar-day"></i> Today</a>
+        <a href="#" id="food-list" class="sidebar-item"><i class="fa-solid fa-utensils"></i> Food List</a>
+    </div>
+    <!--sidebar-->
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div id="content">
+        </div>
     </div>
 
-    <main>
-        <div class="main-box top">
-            <div class="top">
-                <div class="box">
-                    <p>Welcome, <b><?php echo $_SESSION['username']; ?></b></p>
-                </div>
+    <!-- Main Content -->
 
-                <div class="box">
-                    <p>How is the day today</p>
-                </div>
-            </div>
+    <!--footer-->
+    <footer>
+        <p>Copyright &#169; 2024 Xia. All Right Reserved.</p>
+    </footer>
+    <!--footer-->
 
-            <div class="buttom">
-                <div class="box">
-                    <p>Later for chart</p>
-                </div>
-            </div>
-
-        </div>
-    </main>
 </body>
 
 </html>
+
+<?php
+$con->close();
+?>
